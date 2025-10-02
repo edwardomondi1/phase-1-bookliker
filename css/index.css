@@ -1,4 +1,81 @@
 body {
-	display: grid;
-	grid-template-columns: 2fr 8fr
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+#list-panel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#list li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#list li:hover {
+  background-color: #f0f0f0;
+}
+
+#show-panel {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#show-panel img {
+  max-width: 200px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+#show-panel p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+#users-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+#users-list li {
+  padding: 4px 0;
+}
+
+#like-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#like-btn:hover {
+  background-color: #0056b3;
 }
